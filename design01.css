@@ -1,0 +1,1349 @@
+/*************************************************************** BANNIÈRE & HAUT ***************************************************************/
+/* Positionnement du logo */
+a#logo {
+  position: relative;
+  left: -52px;
+  display: block;
+  max-width: 1860px;
+  width: 100%;
+  height: 623px;
+  margin: auto;  
+}
+
+/* Fond du corps du forum */
+#ipbwrapper {
+  padding: 0px;
+  background: #1a213b;
+  color: white;
+}
+
+/* Fait en sorte qu'on voie toute la bannière malgré la barre de nav */
+.container_IE {
+  padding-top: 20px;
+}
+
+/* Positionnement et mise en forme de la barre de navigation */
+.barre_nav {
+  position: fixed;
+  z-index: 4;
+  top: 0px;
+  width: 100%;
+  max-height: 30px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  overflow: auto;
+  background: #1a213b none repeat scroll 0 0;
+  border-bottom: 3px solid #e69b24;
+  font-family: 'Megrim';
+  font-size: 20px;
+  text-align: center;   
+}
+
+/* Mise en forme de la partie de connecté en tant que */
+#userlinks {
+  position: relative;
+  height: 80px;
+  padding: 10px;
+  margin-bottom:20px;
+  background: white;
+  color: black;
+  border: 0px solid;
+}
+
+/* Si pas connecté */
+#userlinks.not-connected {
+  font-size: 20px;
+  height: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+/* Placement de l'avatar de la personne */
+#user-avatar {
+  position: absolute;
+  top: -20px;
+  left: 15px;
+}
+
+/* Mise en forme de l'avatar de la personne */
+#user-avatar, #user-avatar img {
+  height: 130px;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+
+/* Mise en forme du texte "conencté en tant que" */
+#userlinks > p {
+  font-size: 15px;
+  margin-left: 107px;
+}
+
+/* Placement des liens */
+#userlinks .vers_cb, #userlinks > ul {
+  display: inline-block;
+  float: none;
+  vertical-align: bottom;
+}
+
+#userlinks .vers_cb a { color: black; }
+
+#userlinks > ul {
+  width: 39%;
+  margin-left: 4px;
+  font-size: 13px;
+  text-align: right;
+}
+
+#userlinks > ul li {
+  display: block;
+  float: none;
+}
+
+#userlinks > ul li:after {
+  content: "";
+}
+
+/* Mise en forme du lien vers la cb */
+#userlinks .vers_cb {
+  width: 46%;
+  padding-left: 107px;
+  color: black;
+  font-family: "Megrim";
+  font-size: 24px;
+}
+
+#search_menu {
+  position: fixed !important;
+  top: 50px !important;
+  color: white;
+}
+
+/*************************************************************** QEEL ***************************************************************/
+/* Meta la couleur de fond du QEEL */
+#qeel, #gfooter, p.center { background: #090b12; } 
+
+/* Fait en sorte que tout le bas est la même couleur de fa4on continue */
+#gfooter {
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Met les barbelés au-dessus du QEEL */
+#separateur_qeel {
+  height: 84px;
+  background: url('http://image.noelshack.com/fichiers/2015/26/1435332453-separateur-qeel.jpg') top center;
+}
+
+/* Mise en palce des trois blocs */
+#qeel #groupes, #qeel #connectes, #qeel #stats {
+  display: inline-block;
+  vertical-align: top;
+  height: 304px;
+}
+
+#qeel #groupes { width: 235px; }
+#qeel #connectes { 
+  width: 304px;
+  position: relative;
+}
+#qeel #stats {
+  text-align: justify;
+  font-size: 15px;
+  width: 240px;
+  margin-left: 10px;
+}
+
+/* Mise en palce du petit carré d'effectif */
+#qeel #groupes .effectif {
+  width: 10px;
+  height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 20px;
+  transition: all ease 0.5s;
+}
+
+#qeel #groupes .cercle .effectif { background: #A11D1D; }
+#qeel #groupes .conclave .effectif{ background: #965F1C; }
+#qeel #groupes .garde .effectif{ background: #2B64A8; }
+#qeel #groupes .indep .effectif { background: #858585; } 
+
+/* Mise en place du texyte de groupe. */
+#qeel #groupes .texte_groupe {
+  margin-left: -3px;
+  margin-top: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Mise en forme du nom de groupe. */
+#qeel #groupes .nom {
+  font-family: Megrim;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+/* Mise en forme de la citation de groupe. */
+#qeel #groupes .citation {
+  font-family: Tangerine;
+  font-size: 25px;
+}
+
+/* Met en palce le fond des denriers conenctés */
+#qeel #boule {
+  height: 300px;
+  width: 300px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px grey inset;
+  overflow: hidden;
+}
+
+/* Mise en palce et en forme des derniers connectés */
+#qeel #interne_boule {
+  width: 80%;
+  height: 185px;
+  margin: 60px auto auto;
+  overflow: auto;
+  color: black;
+  text-align: justify;
+}
+
+#qeel #interne_boule > div { margin-top: 15px; }
+
+/* Mets les liens en noir et en gris au hover */
+#qeel #interne_boule a { color: black; }
+#qeel #interne_boule a:hover { color: #3F3F3F; }
+
+/* Mise en palce du crane du qeel */
+#qeel #crane {
+  position: absolute;
+  top: -10px;
+  left: -15px;
+  width: 332px;
+  height: 317px;
+  background: url('http://image.noelshack.com/fichiers/2015/26/1435439899-qeel.png');
+  -webkit-transform: translateX(0) rotate(0deg);
+  transform: translateX(0) rotate(0deg);
+  transition: all linear 1s;
+}
+
+/* Déplacemeent lors du passage de la souris */
+#qeel #connectes:hover #crane {
+  -webkit-transform: translateX(320px) rotate(360deg);
+  transform: translateX(320px) rotate(360deg);
+  transition: all linear 1s;
+}
+
+/* Mise en place des différents paragraphes des statistiques */
+#qeel #stats p { margin-bottom: 15px; }
+
+/* Met en orange les données en gras des statistiques */
+#qeel #stats p strong { color: #f0a225; }
+
+
+
+/*************************************************************** CATÉGORIES ***************************************************************/
+.une_cate { margin-bottom: 20px; }
+
+/* Mise ne place de l'image de haut de catégorie */
+.haut_cate { 
+  width: 768px;
+  height: 115px;
+  margin: auto;
+  background: url('http://image.noelshack.com/fichiers/2015/27/1435593627-cate-haut.jpg') top center; 
+  text-align: center;
+  line-height: 115px;
+  color: #f0a225;
+  font-family: Tangerine;
+  font-size: 30px;
+}
+
+/* Mise ne place de l'image de bas de catégorie */
+.bas_cate { 
+  width: 768px;
+  height: 121px;
+  margin: auto;
+  background: url('http://image.noelshack.com/fichiers/2015/27/1435593627-cate-bas.jpg') bottom center; 
+}
+
+/* Mise ne place du milieu, contentant tous les forums */
+.milieu_cate { 
+  position: relative;
+  left: -1px;
+  width: 753px;
+  margin: auto;
+  background: #090b12; 
+}
+
+/* Mise en palce d'un forum */
+.un_forum {
+  position: relative;
+  width: 673px;
+  height: 161px;
+  margin: auto;
+}
+
+/* Mise en palce de l'avatar du dernier message */
+.indic_messages .lastpost-avatar {
+  display: block;
+  float: none;
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  z-index: 1;
+  width: 94px;
+  border-radius: 50%;
+  height: 94px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.indic_messages .lastpost-avatar > img {
+  height: auto;
+  width: 100px;
+}
+
+/* Mise en palce d'images de nouveaux messages */
+.indic_messages .icon {
+  left: 0;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+/* Mise en place du titre */
+.nom_forum {
+  position: absolute;
+  z-index: 2;
+  left: 125px;
+  top: 0px;
+  width: 420px;
+}
+
+/* Mise en forme du titre */
+.nom_forum a.forumtitle {
+  font-family: 'Megrim';
+  color: #2f3652;
+  text-shadow: 1px 1px 0px #5e70b1;
+  font-size: 27px;
+  letter-spacing: 0px;
+}
+
+/* Mise en forme du titre */
+.nom_forum a.forumtitle:hover { letter-spacing: -1px; }
+
+/* Mise en palce du bloc de description */
+.bloc_description {
+  position: absolute;
+  z-index: 1;
+  left: 115px;
+  bottom: 36px;
+  width: 420px;
+  height: 105px;
+  background: #2f3652;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* Mise en place rapide de la description du froum */
+.bloc_description .forum-desc {
+  height: 69px;
+  padding: 5px;
+  text-align: justify;
+  width: auto;
+}
+
+
+.bloc_description .forum-desc p {
+  height: 68px;
+  overflow: auto;
+}
+
+/* Mise en place du bloc du dernier message */
+.bloc_dernier_mess {
+  position: absolute;
+  z-index: 2;
+  bottom: 23px;
+  left: 140px;
+  width: 440px;
+  height: 23px;
+  background: #1a213b;
+  border-radius: 20px;
+  overflow: hidden;
+  line-height: 23px;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* Retire les retours à la ligne des denriers mess */
+.bloc_dernier_mess br { display: none; }
+
+/* Placement de la seconde barre de séparation */
+.bloc_dernier_mess > strong::before {
+  content: "|";
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+  vertical-align: top;
+  font-size: 10px;
+  font-weight: normal !important;
+}
+
+/* Mise en forme des liens du dernier mess */
+.bloc_dernier_mess a {
+  color: white;
+  font-size: 13px;
+}
+
+.bloc_dernier_mess a:hover, .bloc_sous_forums a:hover { color: #f0a225; }
+
+/* Mise en place du bloc de liens vers les sous-forums */
+.bloc_sous_forums {
+  position: absolute;
+  right: 10px;
+  top: 27px;
+  width: 137px;
+  height: 96px;
+  overflow: hidden;
+  border-radius: 11px / 50px;
+  background: #35416d none repeat scroll 0 0;
+  text-align: left;
+  line-height: 0px;
+  font-size: 0px;
+}
+
+/* Mise en palce des liens vers les sous-forums */
+.bloc_sous_forums a {
+  display: block;
+  font-size: 12px;
+  line-height: 13px;
+  color: white;
+}
+
+/* Positionne les liens de sous-forums */
+.bloc_sous_forums > p {
+  width: 80%;
+  height: 80px;
+  margin-left: 15px;
+  margin-top: 10px;
+  padding-right: 10px;
+  overflow: auto;    
+}
+
+/*************************************************************** MESSAGES ***************************************************************/
+/* Met en place la pagination */
+.pagination.topic-options {
+  color: white;
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+/* Met en place nouveau répondre */
+.posting-options.topic-options {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* Couelru des liens de la pagination */
+.pagination.topic-options a { color: white; }
+
+.pagination.topic-options b {
+  background: none !important;
+  color: #d28e2a;
+}
+
+/* Met en place le haut et bas de sujet */
+.le_sujet { position: relative; }
+
+.le_sujet:before {
+  content: '';
+  display: block;
+  width: 800px;
+  height: 97px;
+  background: url('http://image.noelshack.com/fichiers/2015/28/1436273586-haut-suj.jpg') no-repeat top center;
+}
+
+.le_sujet:after {
+  content: '';
+  display: block;
+  width: 800px;
+  height: 90px;
+  background: url('http://image.noelshack.com/fichiers/2015/28/1436273586-bas-suj.jpg') no-repeat top center;
+}
+
+/* Évite que le float emmerde */
+.haut_sujet { 
+  overflow: hidden;
+  background: #080B12;
+}
+
+/* Positionnement et mise en forme du titre du sujet */
+.haut_sujet > h1 {
+  position: absolute;
+  z-index: 3;
+  top: 45px;
+  width: 800px;
+  color: #f0a225;
+  font-family: 'Tangerine';
+  font-size: 45px;
+}
+
+/* Met la couleur de fond au sondage */
+.sondage { 
+  background: #090b12;
+  font-family: 'Georgia';
+}
+
+/* Met en forme le mot Sondage */
+.sondage h3.subtitle.clearfix {
+  color: #f0a225;
+  font-size: 14px;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+/* Met en forme la question de sondage */
+.sondage h4.formsubtitle {
+  font-family: Georgia;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.sondage dl {
+  margin: auto;
+  width: 80%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.sondage dt { width: 50%; }
+.sondage dd { color: #f0a225; }
+.sondage dd.number-votes { color: white; }
+
+/* Retire la barre du bas du sondage */
+.sondage .box-content { border-bottom: 0 solid; }
+
+/* Mise en place du profil de l'utilisateur */
+.un_profil {
+  width: auto;
+  height: 330px;
+  padding: 10px;
+  background: #1a213b;
+}
+
+/* Mise en palce de la aprtie gauche avec l'avatar et le rang */
+.gacuhe_ava {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 330px;
+  width: 210px;
+}
+
+/* Mise en place de l'avatar */
+.gacuhe_ava .avatar {
+  height: 320px;
+  width: 200px;
+  background: none;
+  border: 5px solid white;
+  transition: all ease 0.5s;
+}
+
+/* Effet au passage de la souris sur l'avatar */
+.gacuhe_ava .avatar:hover {
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+  transition: all ease 0.5s;
+}
+
+/* Taille de l'avatar */
+.gacuhe_ava .avatar img { width: 200px; height: 320px; }
+
+/* Mise ne place de la aprtie droite du profil, la signature et els infos de profil */
+.droite_profil {
+  display: inline-block;
+  vertical-align: top;
+  width: 560px;
+  height: 330px;
+  padding: 5px 0 10px 10px;
+  overflow: hidden;
+}
+
+/* Mise en forme du pseudo du membre */
+.droite_profil .pseudo a {
+  color: white;
+  font-family: 'Megrim';
+  font-size: 40px;
+  line-height: 45px;
+  letter-spacing: 0px;
+}
+
+.droite_profil .pseudo a:hover { letter-spacing: 2px; }
+
+/* cache les boutons de sélection */
+.droite_profil .signa_profil input[type="radio"] { display: none; }
+
+/* Met en forme les labels */
+.droite_profil .boutons_passage_profil {
+  width: 95%;
+  margin: auto;
+  color: #3a4571;
+  font-family: 'Tangerine';
+  font-size: 30px;
+  line-height: 35px;
+}
+
+/* Met en place les labels */
+.droite_profil .boutons_passage_profil label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  transition: all ease 0.5s;
+}
+
+/* Met en place el labhel Profil */
+.droite_profil .label_profil { text-align: right; }
+
+/* Mise en forme du label sélectiopnné */
+.droite_profil .signa_input:checked ~ .boutons_passage_profil .label_signature, .droite_profil .profil_input:checked ~ .boutons_passage_profil .label_profil { color:#f0a225; }
+
+/* Mise en forme de ce qui continent signa et profil */
+.droite_profil .contenu {
+  position: relative;
+  height: 220px;
+  width: auto;
+  background: white none repeat scroll 0 0;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black inset;
+  overflow: hidden;
+  color: black;
+  font-family: 'Georgia';
+}
+
+/* Met en place la signature */
+.droite_profil .contenu .signature {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 200px;
+  overflow: auto;
+  padding: 10px;
+}
+
+/* Met en place le profil */
+.droite_profil .contenu .profil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 200px;
+  overflow: auto;
+  padding: 10px;
+  color: grey;
+}
+
+/* Met en place l'image dans le profil */
+.droite_profil .contenu .profil > img {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+}
+
+/* Met en forme els labels du profil */
+.droite_profil .contenu span.label {
+  font-family: Megrim;
+  font-size: 15px;
+  line-height: 16px;
+  color: black;
+}
+
+/* Retire els deux premiers break des signa */
+.signature .signature_div > br:first-child, .signature .signature_div > br:nth-child(2) { display: none; }
+
+
+/* Selon label sélectionné, affiche le bon contenu */
+.droite_profil .signa_input:checked ~ .contenu .signature, .droite_profil .profil_input:checked ~ .contenu .profil { 
+  visibility: visible;
+  opacity: 1;
+  transition: all ease 0.5s;
+}
+
+.droite_profil .signa_input ~ .contenu .signature, .droite_profil .profil_input ~ .contenu .profil { 
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+/* Met en place els liens du profil (mp, ermail, presa, etc) */
+.boutons_profil {
+  height: 20px;
+  margin-top: 7px;
+  font-size: 0px;
+  line-height: 0px;
+  text-align: center;
+}
+
+/* Mise en place du message. */
+.le_message {
+  background: white;
+  padding: 10px;
+  box-shadow: inset 0px 0px 10px black;
+}
+
+/* Mise en place de la partie de quand a été posté le message */
+.quand_poste {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+/* Mise en forme du texte de qui a posté quand */
+.quand_poste .author {
+  color: grey;
+  font-family: 'Georgia';
+}
+
+/* Mise en forme du lien de l'utilisateur de qui a posté */
+.quand_poste .author a {
+  color: grey;
+  font-family: 'Megrim';
+}
+
+/* Mise en place des boutons d'édition de haut du message */
+.boutons_edition_mess {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  text-align: right;
+}
+
+/* Mise en forme et en place du corps de message */
+.corps_mess {
+  min-height: 200px;
+  padding: 20px;
+  color: black;
+  font-family: 'Georgia';
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* Mise en palce de l'édition de fin de message */
+.edit_fin_mess { text-align: right; }
+
+/* Retire le trait à la fin des messages */
+.post { border-bottom: 0px solid; }
+
+/* Permet de faire en srote que le preview donne le même que le psotage */
+#preview .postbody {
+  text-aligjn: justify;
+  color: black;
+  font-family: 'Georgia';
+}
+
+#preview .postbody .post-entry.row1, #preview .postbody .post-entry.row2 {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.borderwrap.postreview .post .entry-content {
+  text-aligjn: justify;
+  color: black;
+  background: white;
+  font-family: 'Georgia';
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*************************************************************** PAGE MEMBRES ***************************************************************/
+.borderwrap.memberlist fieldset { border: 0px solid; }
+.borderwrap.memberlist fieldset legend { 
+  color: #e69b24;
+  font-family: 'Tangerine';
+  font-size: 30px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+
+.borderwrap.member-list .maintitle h3 {
+  text-align: center;
+  color: #e69b24;
+  font-family: 'Tangerine';
+  font-size: 30px;
+}
+
+.box-content.member-list.clearfix { text-align: center; }
+
+.un_membre {
+  position: relative;
+  display: inline-block;
+  verrtical-alignt: top;
+  width: 200px;
+  height: 320px;
+  margin: 10px;
+  margin-top: 50px;
+}
+
+.un_membre .pseudo {
+  position: absolute;
+  bottom: 325px;
+  left: 0px;
+  width: 200px;
+  font-family: 'Megrim';
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 0px white;
+}
+
+.un_membre .infos {
+  position: relative;
+  width: 220px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.un_membre .infos .ava {
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.un_membre .infos .informations {
+  width: 200px;
+  height: 320px;
+  background: rgba(255, 255, 255, 0.8);
+  -webkit-transform: translateY(320px);
+  transform: translateY(320px);
+  transition: all ease 0.5s;
+}
+
+.un_membre .infos:hover .informations {
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+  transition: all ease 0.5s;
+}
+
+.un_membre .infos .informations p {
+  width: 180px;
+  height: 300px;
+  padding: 10px;
+  overflow: auto;
+  text-align: justify;
+  color: black;
+}
+
+.un_membre .infos .informations p img.i_icon_profile, .un_membre .infos .informations p img.i_icon_pm, .un_membre .infos .informations p img[alt="Envoyer un message e-mail"] { display: none; }
+
+.un_membre .infos .informations p a { 
+  display: block;
+  text-align: center;
+  line-height: 15px;
+  letter-spacing: 0px;
+  color: black;
+}
+
+.un_membre .infos .informations p a:hover { letter-spacing: 1px; }
+
+.un_membre .infos .informations p span.label { font-weight: bold; }
+
+/*************************************************************** PROFIL ***************************************************************/
+.box-content.profile legend, .box-content.profile label span { color: white !important; }
+
+ul.privmsg li a { background: none; }
+
+.principal {
+  position: relative;
+  width: 200px;
+  height: 320px;
+  margin: auto;
+}
+
+.principal .pseudo {
+  position: absolute;
+  bottom: 324px;
+  width: 200px;
+  font-family: 'Megrim';
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 1px 1px 0 white;
+}
+
+.principal .rang_image {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+}
+
+.principal .ava {
+  position: relative;
+  z-index: 3;
+}
+
+.principal .infos {
+  position: relative;
+  z-index: 2;
+  width: 180px;
+  height: 300px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+  color: black;
+  text-align: center;
+  -webkit-transform: translate(0px, -320px);
+  transform: translate(0px, -320px);
+  transition: all ease 0.5s;
+}
+
+.principal:hover .infos {
+  -webkit-transform: translate(200px, -320px);
+  transform: translate(200px, -320px);
+  transition: all ease 0.5s;
+}
+
+.borderwrap.profile-view .box-content { text-align: center; }
+
+.personel_info, .statistiques, .contact {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  width: 30%;
+  text-align: justify;
+}
+
+.personel_info img { max-width: 239px; }
+
+.borderwrap.profile-view h4.subtitle {
+    font-family: 'Tangerine';
+    font-size: 30px !important;
+}
+
+.personel_info dt, .statistiques dt, .contact dt, .personel_info dt span, .statistiques dt span, .contact dt span {
+  padding-right: 5px;
+  font-weight: bold;
+  color: #e69b24 !important;
+  font-family: 'Megrim';
+  font-size: 15px;
+}
+
+.personel_info dt, .statistiques dt, .contact dt, .personel_info dd, .statistiques dd, .contact dd { display: inline; }
+.personel_info dd div, .statistiques dd div, .contact dd div { display: inline; }
+.personel_info dd .field_editable.invisible, .statistiques dd .field_editable.invisible, .contact dd .field_editable.invisible { display: none; }
+
+/*************************************************************** CHATBOX ***************************************************************/
+#cb {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease 0.5s;
+}
+
+#cb:target {
+  opacity: 1;
+  visibility: visible;
+  transition: all ease 0.5s;
+}
+
+#cb #conteneur_cb {
+  position: relative;
+  display: block;
+  height: 480px;
+  margin: 11% auto auto;
+  width: 915px;
+}
+
+#cb #conteneur_cb object {
+  display: block;
+  height: 480px;
+  width: 915px;
+}
+
+#cb .fermer_cb {
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  font-family: 'Megrim';
+  color: white;
+  font-size: 25px;
+}
+
+#cb .fermer_cb a { color: white; }
+
+#chatbox_header {
+  background: none;
+}
+.chatbox #chatbox_header {
+  background: none;
+  font-family: Megrim;
+  font-size: 25px;
+}
+
+.chatbox-title a {
+    display: none;
+}
+
+.chatbox-title::after {
+  content: "Boîte À Piplettes";
+  display: block;
+  font-size: 35px;
+}
+
+#chatbox_header a {
+  font-size: 25px;
+}
+
+.chatbox {
+  background: none;
+}
+
+#chatbox_main_options li:after {
+  content: '|';
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+#chatbox_members {
+  background: #35416d;
+  width: 213px;
+}
+
+#chatbox_main_options li:last-child { margin-right: 85px; }
+
+#chatbox_footer { background: #1a213b; }
+#chatbox_footer #chatbox_messenger_form label[for="message"] { display: none; }
+
+#chatbox_footer #chatbox_messenger_form label, #chatbox_footer #chatbox_messenger_form .fontbutton,#chatbox_footer #chatbox_messenger_form #help-button {
+  background: white;
+  border: 0px solid;
+  color: black;
+  padding: 3px;
+}
+
+#chatbox_footer #chatbox_messenger_form #submit_button {
+  background: none;
+  border: 0px solid;
+  font-family: 'Megrim';
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2px;
+  box-shadow: none;
+}
+
+#chatbox_footer #chatbox_messenger_form input#message {
+  background: white;
+  width: 400px;
+  border-radius: 20px;
+  border: 0px solid;
+  height: 14px;
+  padding: 5px;
+  margin-top: -1px;
+}
+
+#chatbox_members .member-title {
+  background: none;
+  color: white;
+  font-family: Megrim;
+  font-size: 18px;
+  font-weight: normal;
+}
+#chatbox_members {
+  font-size: 16px;
+  font-family: 'Arial';
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.40);
+}
+
+#chatbox {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  bottom: 35px;
+  left: 214px;
+  background: url('http://image.noelshack.com/fichiers/2015/31/1438523711-chatbox.jpg');
+}
+
+#chatbox p {
+  border: 0px solid !important;
+  background: none;
+}
+
+.user-msg {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+#chatbox .user-msg .cb-avatar { border: 0px solid !important; }
+
+#chatbox .cb-avatar {
+  background: none !important;
+  border-radius: 50%;
+  box-shadow: 2px 2px 3px black !important;
+  height: 75px !important;
+  overflow: hidden;
+  width: 75px !important;
+}
+
+#chatbox .cb-avatar img {
+  position: relative;
+  left: -5px;
+  width: 80px !important;
+  height: auto !important;
+}
+
+.msg > span[style="color:red"] { 
+  display: block;
+  text-align: center;
+  text-shadow: 1px 1px 0 black; 
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.msg > span[style="color:green"] {
+  color: white !important;
+  text-shadow: 1px 1px 0 black;
+  display: block;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#chatbox .user-msg { position: relative; }
+
+#chatbox .user {
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  left: 150px;
+  position: absolute;
+  top: 5px;
+  z-index: 2;
+}
+
+#chatbox .user-msg .msg {
+  position: relative;
+  background: white;
+  border-radius: 10px;
+  margin-left: 127px;
+  min-height: 45px;
+  padding: 10px;
+  padding-top: 25px;
+}
+
+#chatbox .user-msg .msg:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  left: -40px;
+  top: 16px;
+  bottom: auto;
+  border-color: transparent white;
+  border-width: 25px 40px 0 0;
+  border-style: solid;  
+}
+
+#chatbox .user-msg .msg > span {
+    word-wrap: break-word;
+}
+
+#chatbox .date-and-time {
+  color: grey;
+  position: relative;
+  right: 7%;
+  top: 5px;
+  z-index: 2;
+}
+
+/*************************************************************** LISTE SUJETS ***************************************************************/
+.tfooter.box-content.darkrow.clearfix {
+  margin-top: 10px;
+  background: none;
+  border-bottom: 0px solid;
+}
+
+.liste_sujets {
+  width: 95%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #090b12;
+  border-radius: 50px;
+}
+
+.titre_sous_forum_sujets {
+  position: relative;
+  width: 95%;
+  margin: auto;
+}
+
+.titre_sous_forum_sujets h1 {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 70%;
+  margin-left: 50px;
+  text-align: left;
+  font-family: 'Megrim';
+  font-size: 35px;
+  line-height: 23px;
+  font-weight: normal;
+  color: #2f3652;
+  text-shadow: 1px 1px 3px black;
+}
+
+.titre_sous_forum_sujets .popmenubutton {
+  display: inline-block;
+  float: none;
+  margin-bottom: -5px;
+  vertical-align: bottom;
+}
+
+.titre_sous_forum_sujets .popmenubutton a { 
+  background: none; 
+  bordeR: 0px solid;
+}
+
+.liste_sujets .un_sujet {
+  position: relative;
+  width: 645px;
+  height: 140px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.liste_sujets .un_sujet .messages_vues {
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  font-family: 'Georgia';
+  font-size: 12px;
+}
+
+.liste_sujets .un_sujet .corps_suj {
+  position: absolute;
+  bottom: 10px;
+  width: 556px;
+  height: 72px;
+  padding: 10px;
+  background: #2f3652;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type {
+  display: inline-block;
+  vertical-align: middle;
+  width: 415px;
+  color: white;
+  font-family: 'Georgia';
+  font-size: 15px;
+}
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type .type_suj {
+  color: #eda025;
+  display: inline-block;
+  font-family: Tangerine;
+  font-size: 30px;
+  margin-left: -8px;
+  vertical-align: middle;
+}
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type a.topictitle {
+  color: black;
+  display: inline;
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type .topic-desc { font-size: 10px; }
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type .pagination {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type .pagination a { border: 0px solid !important; }
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type .par {
+  font-family: Georgia;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.liste_sujets .un_sujet .corps_suj .titre_et_type .par a {
+  color: white;
+  font-family: Megrim;
+  font-size: 21px;
+}
+
+.liste_sujets .un_sujet .corps_suj .dernier_mess {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  vertical-align: middle;
+  width: 125px;
+  text-align: center;
+  color: white;
+  font-family: 'Georgia';
+  font-size: 12px;
+}
+
+.liste_sujets .un_sujet .corps_suj .dernier_mess .heure, .liste_sujets .un_sujet .corps_suj .dernier_mess .par {
+  display: block;
+  line-height: 10px;
+  margin: 0;
+}
+
+.liste_sujets .un_sujet .corps_suj .dernier_mess .auteur a {
+  color: white;
+  font-family: Megrim;
+  font-size: 20px;
+  line-height: 20px;
+  margin-right: 5px;
+}
+.liste_sujets .un_sujet .corps_suj .dernier_mess .auteur strong { font-weight: normal; }
+.liste_sujets .un_sujet .indic_images {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 123px;
+  height: 111px;
+  overflow: hidden;
+}
+
+.liste_sujets .un_sujet .indic_images .indic_type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.liste_sujets .un_sujet .indic_images .avatar_dernier_mess {
+  position: absolute;
+  top: 12px;
+  left: 24px;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.liste_sujets .un_sujet .indic_images .avatar_dernier_mess img {
+  margin-top: -10px;
+  width: 80px;
+}
